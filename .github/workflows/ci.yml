@@ -1,0 +1,14 @@
+name Continuous Integration
+
+on: push
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - users: actions/checkout@v2
+
+    - name: Echo
+      run: echo 'Running Continuous Integration Now'
