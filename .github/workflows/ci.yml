@@ -12,3 +12,7 @@ jobs:
 
     - name: Echo
       run: echo 'Running Continuous Integration Now'
+
+    - name: Echo(main branch)
+      if: ${{ github.ref == 'refs/heads/main' }}
+      run: echo 'Only main text'
